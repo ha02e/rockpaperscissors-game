@@ -41,13 +41,13 @@ function App() {
     console.log(user, computer);
 
     if (user.name == computer.name) {
-      return "TIE";
+      return "tie";
     } else if (user.name == "Rock") {
-      return computer.name == "Scissors" ? "WIN!" : "LOSE..";
+      return computer.name == "Scissors" ? "win" : "lose";
     } else if (user.name == "Scissors") {
-      return computer.name == "Paper" ? "WIN!" : "LOSE..";
+      return computer.name == "Paper" ? "win" : "lose";
     } else if (user.name == "Paper") {
-      return computer.name == "Rock" ? "WIN!" : "LOSE..";
+      return computer.name == "Rock" ? "win" : "lose";
     }
   };
 

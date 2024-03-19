@@ -18,6 +18,7 @@ body {
   height: 400px;
   margin: 1em;
   text-align: center;
+  transition: all 0.6s;
 }
 
 .img-area {
@@ -47,4 +48,17 @@ body {
 
 .main button img {
   width: 70%;
+}
+
+/* 결과에 따라 스타일 추가 */
+.win {
+  border: 10px solid #ff3f35;
+}
+
+.lose {
+  border: 10px solid #74737a;
+}
+
+.tie {
+  border: 10px solid #ffec59;
 }
