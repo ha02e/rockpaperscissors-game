@@ -33,16 +33,22 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="game-board">
       <div className="main">
         <Box title="ME" item={userSelect} />
-        {/* <Box title="RESULT" />
-        <Box title="COMPUTER" item={userSelect} /> */}
+        <Box title="RESULT" />
+        {/*<Box title="COMPUTER" item={userSelect} /> */}
       </div>
       <div className="main">
-        <button onClick={() => play("scissors")}>가위</button>
-        <button onClick={() => play("rock")}>바위</button>
-        <button onClick={() => play("paper")}>보</button>
+        <button onClick={() => play("scissors")}>
+          <img src="images/scissors.png" />
+        </button>
+        <button onClick={() => play("rock")}>
+          <img src="images/rock.png" />
+        </button>
+        <button onClick={() => play("paper")}>
+          <img src="images/paper.png" />
+        </button>
       </div>
     </div>
   );

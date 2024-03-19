@@ -5,7 +5,9 @@ const Box = (props) => {
   return (
     <div className="box">
       <h1>{props.title}</h1>
-      <img className="item-img" src={props.item && props.item.image} />
+      <div className="img-area">
+        <img className="item-img" src={props.item && props.item.image} />
+      </div>
       <h2>WIN!</h2>
     </div>
   );
