@@ -8,6 +8,21 @@ import Box from "./component/Box";
 //5. 3번 4번 결과를 가지고 승패를 따진다
 //6. 승패 결과에 따라 테두리 색이 바뀐다.
 
+const choice = {
+  rock: {
+    name: "Rock",
+    image: process.env.PUBLIC_URL + "images/rock.png",
+  },
+  scissors: {
+    name: "Scissors",
+    image: process.env.PUBLIC_URL + "images/scissors.png",
+  },
+  paper: {
+    name: "Paper",
+    image: process.env.PUBLIC_URL + "images/paper.png",
+  },
+};
+
 function App() {
   return (
     <div>
