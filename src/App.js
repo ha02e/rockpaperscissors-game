@@ -28,6 +28,7 @@ function App() {
   const [userSelect, setUserSelect] = useState(null);
   const [computerSelect, setComputerSelect] = useState(null);
   const [result, setResult] = useState("");
+  const [resultArea, setResultArea] = useState("");
 
   const play = (userChoice) => {
     // console.log(userChoice);
@@ -35,6 +36,7 @@ function App() {
     let computerChoice = randomChoice();
     setComputerSelect(computerChoice);
     setResult(judgement(choice[userChoice], computerChoice));
+    setResultArea(judgement(choice[userChoice], computerChoice));
   };
 
   const judgement = (user, computer) => {
@@ -64,7 +66,7 @@ function App() {
     <div className="game-board">
       <div className="main">
         <Box title="ME" item={userSelect} result={result} />
-        <Box title="RESULT" />
+        <Box title="RESULT" resultArea={resultArea} result={result} />
         <Box title="COMPUTER" item={computerSelect} result={result} />
       </div>
       <div className="main">

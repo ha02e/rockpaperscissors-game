@@ -51,14 +51,36 @@ body {
 }
 
 /* 결과에 따라 스타일 추가 */
-.win {
+.box.win {
   border: 10px solid #ff3f35;
 }
 
-.lose {
+.box.lose {
   border: 10px solid #74737a;
 }
 
-.tie {
+.box.tie {
   border: 10px solid #ffec59;
+}
+
+.box.result-area {
+  border: 10px solid #fecb7f;
+}
+
+.result-area .img-area {
+  width: 70%;
+  background-position: center;
+  background-size: cover;
+}
+
+.result-area .img-area.win {
+  background-image: url(/public/images/win.jpg);
+}
+
+.result-area .img-area.lose {
+  background-image: url(/public/images/lose.jpg);
+}
+
+.result-area .img-area.tie {
+  background-image: url(/public/images/tie.jpg);
 }
