@@ -1,0 +1,16 @@
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  border: 10px solid yellow;
+  border-radius: 40px;
+  width: 400px;
+  height: 400px;
+  margin: 1em;
+}
+
+.item-img {
+  width: 60%;
+}
